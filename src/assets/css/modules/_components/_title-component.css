@@ -1,0 +1,34 @@
+.title-component {
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+
+	&__intro-label{
+		display: flex;
+		padding: 0em 1em 0em 1em;
+		font-size: 1.25em;
+		font-style:italic;
+		justify-content: center;
+		color: var(--primary-color-1);
+	}
+
+	&__title {
+		display: flex;
+		padding-bottom: 0.10em;
+		font-size: 4em;
+		font-weight: bold;
+		width: 100%;
+		justify-content: center;
+
+		text-shadow: 4px 4px 0 var(--secondary-color-2), -4px -4px 0 var(--secondary-color-1);
+	}
+
+	&__logo {
+		display: flex;
+		padding: 0em 1em 0em 1em;
+		font-size: 2em;
+		justify-content: center;
+
+		text-shadow: 3px 4px 0 var(--secondary-color-2), -2px -4px 0 var(--secondary-color-1);
+	}
+}

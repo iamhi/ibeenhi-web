@@ -1,0 +1,15 @@
+.content-title-component {
+	font-size: 2.20em;
+	font-weight: bold;
+
+	border-bottom: 1px solid var(--primary-color-3);
+
+	padding-bottom: 0.25em;
+	margin-bottom: 0.25em;
+
+	text-shadow:
+		2px 0 1px var(--secondary-color-2),
+		-2px 0 1px var(--secondary-color-2),
+		0 2px 1px var(--secondary-color-2),
+		0 -2px 1px var(--secondary-color-2);
+}

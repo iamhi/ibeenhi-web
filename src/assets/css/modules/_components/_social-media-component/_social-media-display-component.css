@@ -1,0 +1,27 @@
+.social-media-display-component {
+	display: flex;
+	flex-basis: 25%;
+	flex-grow: 1;
+
+	&__link {
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 100%;
+		text-align: center;
+	}
+
+	&__icon {
+		font-size: 2em;
+		color: var(--primary-color-2);
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__label {
+		padding: 1em;
+		color: var(--primary-color-1);
+	}
+}
