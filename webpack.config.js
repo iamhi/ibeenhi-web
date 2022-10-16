@@ -8,20 +8,10 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const webpack = require('webpack');
 const fse = require('fs-extra');
 const fs = require('fs');
-const fetch = import('node-fetch');
-const Dotenv = require('dotenv-webpack');
 
 const PACKAGE_PATHS = {
     '@src': path.resolve(__dirname, 'src'),
     '@assets': path.resolve(__dirname, 'src/assets'),
-    '@utility': path.resolve(__dirname, 'src/utility'),
-    '@theme': path.resolve(__dirname, 'src/theme'),
-    '@components': path.resolve(__dirname, 'src/components'),
-    '@common-components': path.resolve(__dirname, 'src/components/common'),
-    '@layout-components': path.resolve(__dirname, 'src/components/layout'),
-    '@page-components': path.resolve(__dirname, 'src/pages'),
-    '@services': path.resolve(__dirname, 'src/services'),
-    '@redux': path.resolve(__dirname, 'src/redux'),
     modules: path.join(__dirname, 'node_modules'),
 };
 
@@ -47,26 +37,31 @@ let config = {
     alias: PACKAGE_PATHS,
     extensions: ['.js', '.json', '.jsx', '.ts', '.tsx', '.css'],
   },
-  entry: './src/index.jsx',
-  plugins: [
-    new Dotenv(),
-	],
+  entry: './src/index.js',
   module: {
     rules: [
-      cssConfig,
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: 'babel-loader',
+        cssConfig,
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /(node_modules)/,
+          use: {
+            loader: 'babel-loader',
+          },
         },
-      },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: ['file-loader'],
       },
+      {
+        test: /\.html$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'html-loader',
+        }
+      },
     ],
   },
+  plugins: [],
 };
 
 if (currentTask == 'dev') {

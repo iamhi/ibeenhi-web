@@ -1,0 +1,21 @@
+.header {
+  display: grid;
+
+  &__title {
+    display: flex;
+		font-size: 6.5em;
+		font-weight: bold;
+		width: max-content;
+		max-width: 90%;
+		justify-content: center;
+		margin: auto;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+		text-shadow: 4px 4px 0 var(--secondary-color-2), -4px -4px 0 var(--secondary-color-1);
+
+		@media(--at-medium) {
+			margin-top: 0.3em;
+			font-size: 8em;
+		}
+	}
+}

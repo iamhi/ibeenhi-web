@@ -1,0 +1,17 @@
+.project {
+	opacity: 0;
+	transition: opacity 0.5s ease-in;
+
+	&--visible {
+		opacity: 1;
+	}
+
+	&__title {
+		color: var(--primary-color-3);
+	}
+
+	&__list {
+		&__item {
+		}
+	}
+}

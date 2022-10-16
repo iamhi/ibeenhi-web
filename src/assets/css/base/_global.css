@@ -5,23 +5,12 @@ html {
 
 body {
   margin: 0;
-  height: 100%;
   display: flex;
-  background-color: $appCream;
+  background-color: var(--primary-color-4);
   box-sizing: border-box;
 
   font-family: 'Roboto', sans-serif;
-  color: #333;
-}
-
-#app {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.app-page {
-  height: 100%;
+  color: var(--primary-color-1);
 }
 
 img {
@@ -33,35 +22,6 @@ img {
   box-sizing: border-box;
 }
 
-a {
-  color: black;
-}
-
-input {
-  border-radius: 8px;
-  padding: 8px;
-  border: 1px solid black;
-}
-
-textarea {
-  border: none;
-  overflow: auto;
-  outline: none;
-
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-
-  resize: none;
-  padding: 8px;
-  border-radius: 8px;
-  border: 1px solid black;
-}
-
-.clean-text-decoration {
-  text-decoration: none;
-}
-
 .no-button-css {
   user-select: none;
   background: none;
@@ -71,6 +31,3 @@ textarea {
   cursor: pointer;
 }
 
-.slide {
-  background-color: rgba(0,0,0,0) !important;
-}
