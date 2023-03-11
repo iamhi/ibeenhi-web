@@ -10,8 +10,11 @@
 		color: var(--primary-color-3);
 	}
 
-	&__list {
+	&__info-list {
 		&__item {
+			&__link {
+				color: var(--primary-color-3);
+			}
 		}
 	}
 }
