@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   display: flex;
-  background-color: var(--primary-color-4);
+  background-color: var(--background-color);
   box-sizing: border-box;
 
   font-family: 'Roboto', sans-serif;
