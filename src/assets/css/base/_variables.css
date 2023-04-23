@@ -15,7 +15,7 @@ $transparentLightGreen: rgba(63, 193, 201, 0.3);
 $textColor: #251d3a;
 $borderColor: #e04d01;
 $innerBackgroundColor: #ff7700;
-$backgroundColor: #2a2550;
+$bckgroundColor: #2a2550;
 
 :root {
 	/*
@@ -24,16 +24,16 @@ $backgroundColor: #2a2550;
 	--primary-color-3: $appLightPink;
 	*/
 	
-	--primary-color-1: #251d3a;
-	--primary-color-4: #2a2550;
-
-	--primary-color-2: $appLightGreen;
-	--primary-color-3: $appLightPink;
+	--primary-color-1: #ede465;
+	/* --primary-color-2: #f35e5e; */ /* Fonts color */
+	--primary-color-2: #e6e6e6; /* Fonts color */
+	--primary-color-3: #ede465;
+	--primary-color-4: #f35e5e;
 	
-	--secondary-color-1: $appLightGreen;
-	--secondary-color-2: $appLightPink;
+	--secondary-color-1: #f35e5e;
+	--secondary-color-2: #008ae6;
 
 	--white-color: $appCream;
-	--background-color: $appBlue;
-	--background-secondary-color: $transparentLightGreen;
+	--background-color: #404040;
+	--background-secondary-color: #595959;
 }
