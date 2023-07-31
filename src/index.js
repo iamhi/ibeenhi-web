@@ -4,7 +4,7 @@ import 'lazysizes';
 import { start as startVisibility } from './js/elementController.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-	startVisibility();
+	setTimeout(() => startVisibility(), 1000);
 
 	import('@fortawesome/fontawesome-free/js/fontawesome');
 	import('@fortawesome/fontawesome-free/js/solid');
