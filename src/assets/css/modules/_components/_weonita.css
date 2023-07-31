@@ -1,0 +1,51 @@
+.weonita-i {
+	font-size: 1.8em;
+	color: yellow;
+	font-weight: bold;
+	opacity: 0;
+	transition: opacity 0.8s ease-in;
+
+	&--visible {
+		opacity: 1;
+	}
+}
+
+.weonita-love {
+	font-weight: bold;
+	display: flex;
+	font-size: 2.2em;
+	color: lightgreen;
+	opacity: 0;
+	transition-delay: 0.2s;
+
+	transition: opacity 0.8s ease-in;
+
+	&--visible {
+		opacity: 1;
+	}
+
+	&__you {
+		font-weight: bolder;
+		margin-left: 0.3em;
+		color: #ff3399;
+		font-size: 1.4em;
+	opacity: 0;
+
+		transition: opacity 1.3s ease-in;
+
+		&--visible {
+			opacity: 1;
+		}
+	}
+}
+
+.weonita-you {
+	font-size: 2.3em;
+	opacity: 0;
+
+	transition: opacity 1.4s ease-in;
+
+	&--visible {
+		opacity: 1;
+	}
+}
