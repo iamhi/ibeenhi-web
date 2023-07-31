@@ -3,9 +3,9 @@
 	color: yellow;
 	font-weight: bold;
 	opacity: 0;
-	transition: opacity 0.8s ease-in;
 
 	&--visible {
+		transition: opacity 0.8s ease-in;
 		opacity: 1;
 	}
 }
@@ -18,9 +18,8 @@
 	opacity: 0;
 	transition-delay: 0.2s;
 
-	transition: opacity 0.8s ease-in;
-
 	&--visible {
+		transition: opacity 0.8s ease-in;
 		opacity: 1;
 	}
 
@@ -29,11 +28,10 @@
 		margin-left: 0.3em;
 		color: #ff3399;
 		font-size: 1.4em;
-	opacity: 0;
-
-		transition: opacity 1.3s ease-in;
+		opacity: 0;
 
 		&--visible {
+			transition: opacity 1.3s ease-in;
 			opacity: 1;
 		}
 	}
@@ -43,9 +41,8 @@
 	font-size: 2.3em;
 	opacity: 0;
 
-	transition: opacity 1.4s ease-in;
-
 	&--visible {
+		transition: opacity 1.4s ease-in;
 		opacity: 1;
 	}
 }
